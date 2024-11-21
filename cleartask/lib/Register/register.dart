@@ -32,7 +32,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               alignment: Alignment.center,
               child: const Text(
-                'Login',
+                'Registre-se',
                 style: TextStyle(
                   fontSize: 28,
                   color: Colors.teal,
@@ -107,7 +107,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   activeColor: Colors.teal,
                 ),
                 const Text(
-                  'Receba e-mails de promoção e pá e tais.',
+                  'Receba e-mails de promoção e atualizações.',
                   style: TextStyle(color: Colors.black54),
                 ),
               ],
@@ -149,14 +149,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             const SizedBox(height: 20),
 
-            // Login Button
+            // Register Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  // Handle login action
+                  Navigator.pushNamed(context, 'login');
                 },
-                child: const Text('Login'),
+                child: const Text('Registrar'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.teal,
                   foregroundColor: Colors.white,
