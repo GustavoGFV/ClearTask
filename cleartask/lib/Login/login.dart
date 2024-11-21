@@ -91,12 +91,11 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               // Logo
               const CircleAvatar(
-                radius: 40,
-                backgroundColor: Colors.white,
+                radius: 100,
+                backgroundColor: Colors.transparent,
                 child: ImageIcon(
                   AssetImage("assets/logo.png"), // Icone substituto
-                  size: 40,
-                  color: Color(0xFF004D40),
+                  size: 800
                 ),
               ),
               const SizedBox(height: 16.0),
