@@ -172,12 +172,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ElevatedButton(
                 onPressed: _login,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF00BFA5),
+                  backgroundColor: const Color(0xFF00BFA5),
                   minimumSize: const Size(double.infinity, 50),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
                 ),
                 child: const Text(
                   'Login',
@@ -197,15 +197,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
                 ),
-                icon: Icon(Icons.login, color: Color(0xFF004D40)),
-                label: Text(
+                icon: const Icon(Icons.login, color: Color(0xFF004D40)),
+                label: const Text(
                   'Continuar com Google',
                   style: TextStyle(color: Color(0xFF004D40)),
                 ),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
 
               // Esqueceu a senha e Registro
               Row(
@@ -215,7 +215,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () {
                       // Lógica para esquecer senha
                     },
-                    child: Text(
+                    child: const Text(
                       'Esqueceu a senha',
                       style: TextStyle(color: Colors.white),
                     ),
@@ -224,7 +224,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () {
                       Navigator.pushNamed(context, 'register');
                     },
-                    child: Text(
+                    child: const Text(
                       'Registre-se',
                       style: TextStyle(color: Colors.white),
                     ),
