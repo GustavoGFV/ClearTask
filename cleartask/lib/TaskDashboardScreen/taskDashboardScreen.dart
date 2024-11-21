@@ -25,7 +25,7 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/profile.jpg'), // Replace with actual profile image
+                  backgroundImage: AssetImage('assets/profile.png'), // Replace with actual profile image
                   radius: 25,
                 ),
                 IconButton(
@@ -40,7 +40,7 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
 
             // Welcome message
             const Text(
-              'Olá, Montanha!',
+              'Olá, Usuário!',
               style: TextStyle(fontSize: 18, color: Colors.black87),
             ),
             const Text(
@@ -85,9 +85,9 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
                     // Handle adding new task
                   },
                   icon: const Icon(Icons.add, color: Colors.teal),
-                  label: const Text('+ Nova tarefa', style: TextStyle(color: Colors.teal)),
+                  label: const Text('Nova tarefa', style: TextStyle(color: Colors.teal)),
                   style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.teal),
+                    side: const BorderSide(color: Colors.teal),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                   ),
                 ),
@@ -115,7 +115,6 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
                 onPressed: () {
                   // Handle continue action
                 },
-                child: const Text('Continue'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.teal,
                   foregroundColor: Colors.white,
@@ -124,14 +123,15 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
+                child: const Text('Continue'),
               ),
             ),
 
             // Bottom navigation bar
             const SizedBox(height: 20),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
+              children: [
                 Icon(Icons.home, color: Colors.teal),
                 Icon(Icons.bookmark_border, color: Colors.grey),
                 Icon(Icons.article_outlined, color: Colors.grey),
