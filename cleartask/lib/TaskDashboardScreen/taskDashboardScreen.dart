@@ -24,12 +24,12 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage('assets/profile.png'), // Replace with actual profile image
                   radius: 25,
                 ),
                 IconButton(
-                  icon: Icon(Icons.notifications_none, color: Colors.teal),
+                  icon: const Icon(Icons.notifications_none, color: Colors.teal),
                   onPressed: () {
                     // Handle notification tap
                   },
@@ -57,7 +57,7 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('Seg\n18', style: TextStyle(color: Colors.black54)),
+                const Text('Seg\n18', style: TextStyle(color: Colors.black54)),
                 Text('Ter\n19', style: TextStyle(color: Colors.black54)),
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
