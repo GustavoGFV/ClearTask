@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
       if (isLoggedIn) {
         Navigator.push(
         context,
-         MaterialPageRoute(builder: (context) => TaskDashboardScreen()),
+         MaterialPageRoute(builder: (context) => const TaskDashboardScreen()),
         );
     } else {
       // Show login screen if user is not remembered
@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // Navigate to main screen after login
     Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TaskDashboardScreen()),
+    MaterialPageRoute(builder: (context) => const TaskDashboardScreen()),
     );
   }
 
@@ -93,8 +93,8 @@ class _LoginScreenState extends State<LoginScreen> {
               const CircleAvatar(
                 radius: 40,
                 backgroundColor: Colors.white,
-                child: Icon(
-                  Icons.all_inclusive, // Icone substituto
+                child: ImageIcon(
+                  AssetImage("assets/logo.png"), // Icone substituto
                   size: 40,
                   color: Color(0xFF004D40),
                 ),

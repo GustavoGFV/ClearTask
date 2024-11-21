@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TaskDashboardScreen extends StatefulWidget {
-  const TaskDashboardScreen({Key? key}) : super(key: key);
+  const TaskDashboardScreen({super.key});
 
   @override
   _TaskDashboardScreenState createState() => _TaskDashboardScreenState();
@@ -58,7 +58,7 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const Text('Seg\n18', style: TextStyle(color: Colors.black54)),
-                Text('Ter\n19', style: TextStyle(color: Colors.black54)),
+                const Text('Ter\n19', style: TextStyle(color: Colors.black54)),
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                   decoration: BoxDecoration(
@@ -70,9 +70,9 @@ class _TaskDashboardScreenState extends State<TaskDashboardScreen> {
                     style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
-                Text('Qui\n21', style: TextStyle(color: Colors.black54)),
-                Text('Sex\n22', style: TextStyle(color: Colors.black54)),
-                Text('Sáb\n23', style: TextStyle(color: Colors.black54)),
+                const Text('Qui\n21', style: TextStyle(color: Colors.black54)),
+                const Text('Sex\n22', style: TextStyle(color: Colors.black54)),
+                const Text('Sáb\n23', style: TextStyle(color: Colors.black54)),
               ],
             ),
             const SizedBox(height: 20),
